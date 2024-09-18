@@ -1,0 +1,132 @@
+
+  
+  .testimonial-slider-wrapper {
+  
+    position: relative;
+    
+  }
+  
+  .testimonial-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial-card {
+    flex: 1;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 15px;
+   display: flex;
+   justify-content: flex-start;
+    max-width: 690px;
+
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .testimonial-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .testimonial-rating {
+    color: blaack;
+ 
+      }
+      .testimonial-rating::before {
+        position: relative;
+        content: "5.0";
+        margin-right: 6px;
+        top:11%;
+       
+     
+          }
+  
+
+  
+
+  
+  /* Custom Control Buttons */
+  .btnnew{
+   
+    padding: 0;
+    
+  }
+
+  .btnnew:hover{
+
+    background-color: #09433c;
+  }
+  
+ 
+  
+  .carousel-control-next {
+    margin-left: 10px;
+  }
+  
+  .top-right-navigation {
+    position: absolute;
+    top: -5em;
+    right: 2em;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Custom Indicators */
+  .custom-indicators {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .indicator-btn {
+    border: 1px solid  #09433c;
+    
+  
+    width: 14px;
+    height: 14px;
+   
+  
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  
+  .indicator-btn.active {
+    background-color: #09433c;
+  }
+
+  .testimonal-feed{
+    font-family: "Inter", sans-serif;
+    font-size: clamp(16px, 0.938vw, 22px);
+    font-style: normal;
+    font-weight: 400;
+  display: block;
+    
+   
+  }
+ 
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .testimonial-cards-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      width: auto;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .top-right-navigation {
+      right: 10px;
+    }
+  }
+  

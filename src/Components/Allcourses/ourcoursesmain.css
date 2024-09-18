@@ -1,0 +1,99 @@
+/* Container around the tabs */
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styling to match the image */
+.course-title {
+  color: #0c0c0d;
+  font-weight: bolder;
+  font-family: "space grotesk", sans-serif;
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+/* Custom tabs styling */
+.custom-tabs .nav-link {
+  text-decoration: none;
+  color: #61636a;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: none;
+  text-wrap: nowrap;
+}
+.custom-tabs {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: nowrap;
+}
+
+.custom-tabs .nav-link.active {
+  color: #004d40; /* Dark green color for active tab */
+  font-weight: bold; /* Bold for active tab */
+  border-bottom: 2px solid #004d40; /* Underline active tab */
+}
+
+.custom-tabs .nav-link:hover {
+  color: #004d40; /* Hover color matches active tab */
+}
+
+/* Content inside each tab */
+.tab-content {
+  padding: 5px 0; /* Padding inside the tab content */
+  font-size: 14px; /* Font size for the content */
+  color: #666666; /* Light gray color for content */
+}
+
+/* Styling for the "Explore All Courses" button */
+.explore-btn {
+  position: absolute;
+  top: -2.25em;
+  right: 0em;
+  background-color: #004d40; /* Dark green color for the button */
+  color: white; /* White text */
+  font-size: 16px; /* Font size to match image */
+  padding: 12px 30px; /* Exact padding to match button in image */
+  border-radius: 50px; /* Full rounded button */
+  border: none;
+  margin-top: 30px; /* Space between tabs and button */
+  font-family: "Arial", sans-serif;
+  font-weight: 500; /* Medium weight for button text */
+}
+
+/* Hover effect for the button */
+.explore-btn:hover {
+  background-color: #003d33; /* Slightly darker green on hover */
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .custom-tabs {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  .explore-btn {
+    position: static;
+    margin:0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-tabs {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .explore-btn {
+    position: static;
+    margin:0 auto;
+  }
+}
+
+@media (max-width: 330px) {
+}

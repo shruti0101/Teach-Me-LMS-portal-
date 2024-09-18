@@ -1,0 +1,30 @@
+.scroller-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: clamp(48px, 4.167vw, 160px) 0;
+}
+
+.scroller {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9rem;
+    animation: scroll 90s linear infinite; /* Smooth infinite scroll */
+}
+
+.scroller img {
+    height: 3.9em; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start from the beginning */
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left by half the width of the image set */
+    }
+}

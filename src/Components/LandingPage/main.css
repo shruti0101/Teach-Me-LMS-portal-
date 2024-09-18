@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+  
+
+.nav-link:hover{
+  color: var(--primary-color) !important;
+}
+.nav-link:active{
+  color: var(--primary-color) !important;
+}
+.nav-link:focus{
+  color: var(--primary-color) !important;
+}
+
+
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.navbar{
+  background: url('https://uiparadox.co.uk/templates/teach-me/assets/media/hero/hero-bg.png') no-repeat center;
+
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+}
+
+.nav-item  i{
+  color: var(--white-color) !important;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #d1d22d;
+  --secondry-color:#09433c;
+  --white-color: #fff;
+  --text-gray: #5e866d;
+  --black-color: #000;
+  --primary-font: "Space Grotesk", sans-serif;     
+  --secondry-font: sans-serif;
+}
+
+
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/ 
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+} 
+::-webkit-scrollbar-track {
+  background: var(--white-color); 
+} 
+::-webkit-scrollbar-thumb {
+  background:var(--text-gray); 
+} 
+
+
+.header{
+  background: url('https://uiparadox.co.uk/templates/teach-me/assets/media/hero/hero-bg.png') no-repeat center;
+  background-size:cover;
+  z-index: 9;
+  position: relative;
+  padding-top: .25rem;
+ 
+ 
+}
+
+/*
+==========================================
+   Header Design
+==========================================
+*/
+
+.navigation-wrap .nav-item{
+  padding:0 0.625rem;
+  transition:all 200ms linear;
+}
+.navbar-toggler:focus{
+  outline:unset;
+  border:unset;
+  box-shadow: none;
+}
+.nav-link{
+  font-family: var(--secondry-font); 
+  font-size:0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color:var(--white-color);
+  letter-spacing: 1px;
+}
+#nv1 a{
+  color: var(--primary-color)
+}
+
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+
+  color: var(--white-color);
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  color: var(--black-color);
+  line-height: 3rem;
+
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  color:#45474F;
+  
+  font-family: var(--primary-font);
+  
+  
+  margin-bottom: 0.5rem;
+}
+
+
+
+p {
+ 
+  font-size: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  color:  #45474F;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-family: var(--primary-font);
+
+  
+}
+
+
+
+.custom-dropdown::after {
+  display: none; 
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 160px;
+  margin-left: 17px;
+  position: absolute;
+  
+  
+  
+
+}
+.dropdwn-menu-trainer{
+  margin-top: 100px;
+  margin-left: 17px;
+  position: absolute;
+}
+.dropdown-item:hover{
+ 
+background-color: #d1d22d;
+}
+.banerhead{
+  position: relative;
+  
+}
+.banerhead span{
+  color: var(--primary-color);
+  font-weight:bold;
+  
+}
+
+.banerhead span img{
+  width: 190px;
+
+}
+.banner-right img{
+  max-width: 485px;
+  height: 521px;
+  object-fit: cover;
+
+ 
+ 
+}
+.banner-center img{
+  position: absolute;
+  top: 173px;
+  width: 200px;
+  
+
+}
+.wraper{
+  position: relative;
+}
+
+
+
+
+.imgover{
+  margin-left:-8px;
+}
+
+
+
+.banerheading{
+  color: #004439;
+  font-size: clamp(24px, 1.458vw, 38px);
+ display: inline-block;
+  position: relative;
+
+ 
+  
+  
+}
+
+.banerheading::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  
+  left: 0;
+  background: #004439;
+  height: 2px;
+  width: 100%;
+}
+
+
+.bannerhead1{
+      font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(48px, 2.865vw, 72px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+
+
+.container{
+
+padding: 0%;
+}
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 991px) {
+
+
+  .banner-right img{
+    max-width: 100%;
+    height: unset;
+    object-fit: fill;
+
+  }
+
+ 
+}
+
+@media (max-width: 767px) {
+
+
+  .banner-right img{
+    max-width: 100%;
+    object-fit: fill;
+
+  }
+
+  
+
+}
+
+@media (max-width:330px) {
+
+
+  .banner-right img{
+    max-width: 100%;
+    object-fit: fill;
+
+  }
+}
+  

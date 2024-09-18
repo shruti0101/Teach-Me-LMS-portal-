@@ -1,0 +1,71 @@
+/* General form card styles */
+.card {
+    border-radius: 15px;
+    border: none;
+  }
+  
+  /* Button styles for Google and Facebook login */
+  .google-btn {
+    background-color: #db4437;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   border: 1px solid rgb(228, 217, 217) !important;
+  }
+  
+  .google-btn:hover {
+    background-color: #D5D52C !important; /* Important to override any conflicts */
+    color: black !important;
+  }
+  
+  .facebook-btn {
+    background-color: #4267B2;
+    border: 1px solid rgb(228, 217, 217) !important;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .facebook-btn:hover {
+    background-color: #D5D52C !important; /* Important to override any conflicts */
+    color: black !important;
+  }
+  
+  /* Align text and spacing */
+  .text-center {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Input group icon background */
+  .input-group-text {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-dark {
+    background-color: #333;
+    border: none;
+
+  }
+  
+  .btn-dark:hover {
+    background-color: #222;
+  }
+  
+  /* Style the checkbox text */
+  .form-check-label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Links styling */
+  .text-muted {
+    font-size: 0.9rem;
+  }
+  
+  a.text-muted {
+    color: #6c757d;
+  }
+  
+  a.text-muted:hover {
+    color: #000;
+  }
+  

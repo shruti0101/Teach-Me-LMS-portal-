@@ -1,0 +1,43 @@
+
+.head {
+    
+
+  background-image: url(https://uiparadox.co.uk/templates/teach-me/assets/media/backgrounds/title-bg.png);
+  background-size: cover;
+
+  height: 21.345rem;
+
+  position: relative;
+}
+.header-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.header-img img {
+  height: 280px;
+  width:  470px;
+  /* transform:translateX(50px) ; */
+
+
+  
+}
+
+.header-text h1 {
+    text-align: left;
+  color: white;
+  font-weight: 700;
+  font-size: 3.4538rem;
+  text-transform: capitalize;
+  /* letter-spacing: 1px; */
+  padding-top: 13.634rem;
+  /* padding-right: 6.6356rem; */
+  font-family: "space grotesk", sans-serif;
+}
+
+
+@media  (max-width:768px){
+  .header-text h1{
+    text-align: center;
+  }
+}

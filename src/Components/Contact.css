@@ -1,0 +1,20 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+.icon-bg i{
+    width: clamp(32px, 2.5vw, 60px);
+    height: clamp(32px, 2.5vw, 60px);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #004439;
+    border-radius: clamp(4px, 0.417vw, 16px);
+    color:white;
+}
+.contact-icon{
+    p{
+        color: #61636A;
+        font-family: bold;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+}

@@ -1,0 +1,185 @@
+
+
+.overview-tabs {
+    display: flex;
+    justify-content: space-between; /* Ensures tabs are evenly spaced */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    border-bottom: none;
+    /* margin: 0 auto; */
+  }
+  
+  .overview-tabs .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #45474f;
+    background-color: #eaeaec;
+    text-align: center;
+    flex: 1; /* Make each tab take up equal width */
+    margin: 5px; /* Add margin between tabs */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 12px;
+    border-radius: 5px;
+    min-width: 150px; /* Prevent tabs from becoming too narrow */
+  }
+  
+  /* Hover effect */
+  .overview-tabs .nav-link:hover {
+    color: #fff;
+    background-color: #004439;
+    cursor: pointer;
+  }
+  
+  /* Active tab styling */
+  .overview-tabs .nav-link.active {
+    color: #fff;
+    background-color: #004439;
+  }
+
+  .description p{
+    font-family:'inter', sans-serif;
+    font-size: 17px;
+    color: #686970;
+    font-weight: 400;
+    max-width: 85%;
+    margin-top: 20px;
+   
+   
+    
+  }
+  .description h4{
+    color: #45474F;
+    font-family:'inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .gap-16{
+    gap: clamp(12px, 0.833vw, 32px);
+  }
+  .timing p{
+    font-family:'inter', sans-serif;
+    font-size: 17px;
+    color: #686970;
+    font-weight: 400;
+
+  }
+  .drop-content span{
+   font-family:'inter', sans-serif;
+font-size:15px;
+font-weight: bold;
+color: #5b5d5e;
+
+
+  }
+
+.instructor-body {
+    background-color: #fff;
+}
+
+
+
+
+.rating-bar {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    position: relative;
+    height: 10px;
+  
+  }
+  .rating-bar-fill {
+    background-color: #004439 !important;
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+  }
+  .rating-percentage {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .review-stars {
+    color: #ffc107;
+  }
+  .review-author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .auth-1 img{
+width: 40px;
+height: 40px;
+  }
+
+  .auth-2 img{
+    width: 40px;
+    height: 40px;
+      }
+
+      .rating {
+        float:left;
+        border:none;
+    }
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0, 0, 0, 0);
+    }
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        padding:0 .1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:200%;
+        line-height:1.2;
+        color:#ddd;
+    }
+    .rating:not(:checked) > label:before {
+        content:'★ ';
+    }
+    .rating > input:checked ~ label {
+        color: #f70;
+    }
+    .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+        color: gold;
+    }
+    .rating > input:checked + label:hover, .rating > input:checked + label:hover ~ label, .rating > input:checked ~ label:hover, .rating > input:checked ~ label:hover ~ label, .rating > label:hover ~ input:checked ~ label {
+        color: #ea0;
+    }
+    .rating > label:active {
+        position:relative;
+    }
+  
+
+
+  
+  /* Responsive styling */
+  @media (max-width: 576px) {
+    .overview-tabs .nav-link {
+      flex-basis: 100%; /* Make tabs take full width on small screens */
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+
+
+   @media (max-width: 435px){
+    .drop-content span{
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+   }
+   @media (max-width: 766px){
+    .instructor-body{
+        display: flex;
+        flex-direction: column !important;
+        text-wrap: wrap;
+      
+
+    }
+    .instructor-content{
+        margin-top: 30px;
+    }
+
+ 
+   }

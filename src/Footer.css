@@ -1,0 +1,67 @@
+footer {
+    background-image: url(https://uiparadox.co.uk/templates/teach-me/assets/media/backgrounds/title-bg.png);
+
+    color: white;
+  }
+
+  
+
+  
+  footer .text-warning {
+    color: #D5D52C !important; /* For the "TeachMe" branding */
+  }
+  
+  footer .list-unstyled li {
+    color: #ddd;
+    margin-bottom: 0.5rem;
+  }
+  .mailBox{
+    position: absolute;
+    left: 16px;
+    top: 18px;
+  }
+  .submit-arrow{
+    position: absolute;
+    right: 65px;
+    top: 13px;
+    background: transparent;
+    border: 0;
+}
+  .bg-transparent input{
+    
+    padding: 18.65px 16px;
+    padding-left: 48px;
+    border-radius: clamp(4px, 0.417vw, 16px);
+    border: 1px solid #EAEAEC;
+    background: transparent;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(17px, 0.938vw, 22px);
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.32px;
+    position: relative;
+    color: white !important;
+    box-shadow: none;
+    width: 80%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+.tel-mail a{
+    text-decoration: none;
+    color:white;
+ 
+
+}
+
+@media (max-width: 767.98px) { 
+  .bg-transparent input {
+   width: 78%;
+  }
+
+  .submit-arrow{
+    right: 60px;
+  }
+}

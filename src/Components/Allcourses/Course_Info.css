@@ -1,0 +1,148 @@
+.course-info-head{
+   background-color: #FAFAFA;
+}
+.image img{
+    border-radius: 10px;
+    object-fit: contain;
+   width:100% ; 
+    height: 40%;
+
+}
+.card{
+    border: 1px solid rgb(245, 240, 240);
+    position: relative;
+}
+.card-img{
+    position: relative;
+
+    
+}
+
+.overlap {
+    position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60px; 
+  width: 100%;
+  height: auto;
+    
+}
+.card-img-top{
+  padding: 1.52rem 1.354rem;
+  border-radius: 35px;
+ 
+    /* width: 100%;
+    height: auto; */
+  
+}
+.hover-icon  a svg  {
+    width: clamp(20px, 1.25vw, 48px);
+    height: clamp(20px, 1.25vw, 48px)
+    
+  }
+  .hover-icon  a svg:hover{
+    color:rgb(145, 255, 0);
+    transform: scale(1.22);
+    transition: all .3s ease-in-out;
+  }
+
+
+.instructor img{
+    height: 90%;
+    width: 10%;
+
+}
+.lists ul li{
+    background-color: #FAFAFA;
+    border: none;
+    margin-bottom: 10px;
+}
+.black{
+    font-weight: 600;
+    color:black;
+}
+
+
+
+
+
+/* css media query */
+@media (min-width:990px){
+    .overlap{
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70px; /* Adjust size of overlay image if needed */
+        width: 100%;
+        height: auto;
+        
+    
+     }
+}
+
+@media (max-width:990px){
+
+ .image img{
+    padding-top:1.323rem;
+ object-fit: cover;
+    height: 100%;
+    width: 100%;
+ }   
+ .overlap{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70px; /* Adjust size of overlay image if needed */
+    width: 100%;
+    height: auto;
+    
+
+ }
+ 
+.instructor img{
+    height: 100%;
+    width: 10%;
+
+}
+
+   
+   
+}
+
+
+
+@media (max-width:780px){
+     .overlap{
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 60px; 
+        width: 100%;
+        height: auto;
+    } 
+    
+.instructor img{
+    height: 100%;
+    width: 10%;
+
+}
+
+}
+@media (max-width:455px){
+     .overlap{
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 40px; 
+        width: 100%;
+        height: auto;
+    } 
+   
+    
+.instructor img{
+    height: 100%;
+    width: 10%;
+
+}
+}
